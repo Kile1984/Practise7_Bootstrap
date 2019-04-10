@@ -1,0 +1,525 @@
+@font-face{
+    font-family: Montserrat;
+    src:url(fonts/Montserrat-Regular.otf);
+}
+@font-face{
+    font-family: Montserrat-Extra-Light;
+    src:url(fonts/Montserrat-ExtraLight.otf);
+}
+body{
+	font-family: Montserrat;
+	color: #000;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    margin-bottom: 10px;
+}
+p{
+	margin: 0;
+}
+.p-0{
+	padding: 0;
+}
+.m-top{
+	margin-top: 50px;
+}
+a:hover, a:focus{
+	text-decoration: none!important;
+}
+.activ{
+	color: #2eb2ef!important;
+	font-weight: bold!important;
+}
+.topTop, .topMiddle, .topBottom, .customer, .footerLeft, .footerRight, 
+.umzugeTitle, .umzugeLeft, .umzugeRight, .umzugeList, .uberUnsTitle, 
+.uberUnsleft, .uberUnsRight, .uberUnsleft p:nth-child(2), .referenzenText, .referenzenlogo,
+.referenzenTitle, .blogRight, .blogRight p:nth-child(3), .blog:first-child img, #contactForm, .formRight, .contentTop, .contentLeft, .contentRight, .contentBottom{
+	padding-top: 50px;
+}
+.umzugeContent, .uberUnsContent, .referenzenContent, .blog, .formRight, .contentTop, .contentLeft, .contentRight, .contentBottom{
+	font-size: 18px;
+	line-height: 2;
+}
+.uberUnsTitle span, .referenzenTitle span, .umzugeLeft p, .umzugeLeft li, .umzugeRight p, 
+.uberUnsContent p, .referenzenContent p, .blog p, .topMiddle, .footerSecondLine, .submitContact label,
+.formRight, .contentTop p, .contentLeft ul, .contentRight ul, .contentBottom p, .contentLeft p{
+	font-family: Montserrat-Extra-Light;
+}
+.umzugeTitle hr, .uberUnsContent hr, .referenzenContent hr, .blog hr{
+	margin: 5px 0 0 5px;
+}
+.umzugeList li:before,.contentLeft li:before, .contentRight li:before{
+	content: "✓";
+	color: #2b96c7;
+	font-size: 14px;
+	padding-right: 5px;
+}
+/*****************************index.html*****************************/
+.wrapp{
+	position: relative;
+}
+.logo, .navigation{
+	position: absolute;
+	z-index: 999;
+}
+.logo img{
+	width: 100px;
+	padding-top: 15px;
+}
+.navigation{
+	right: 0;
+}
+nav{
+	background: transparent!important;
+	border: none!important;
+}
+nav a{
+	color: #fff!important;
+	background: transparent!important;
+}
+nav a:hover{
+	color: #87CEFA!important;
+}
+.navbar-nav{
+	float: right!important;
+}
+.navbar{
+	margin-bottom: 0;
+}
+ul.dropdown-menu{
+	background: transparent;
+}
+.dropdown-menu{
+	box-shadow: none;
+	border: none;
+}
+
+/*********
+CAROUSEL
+**********/
+.carousel-inner>.item>a>img, .carousel-inner>.item>img{
+	width: 100%;
+}
+.carousel-caption{
+    color: #fff;
+	background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+}
+.carousel-caption h1{
+	padding-top: 30%;
+}
+/*********
+TOP  - MIDDLE
+**********/
+.topMiddle{
+	padding-bottom: 50px;
+}
+.topMiddle{
+	background: rgba(135, 206, 250, 0.5);
+}
+.blueHr{
+	width: 100px;
+	margin-bottom: 50px;
+	border-top: 3px solid #87CEFA;
+}
+.whiteHr{
+	width: 100px;
+	margin-bottom: 50px;
+	border-top: 3px solid #fff;
+}
+.middleLeft .whiteHr{
+	width: 100px;
+	margin-bottom: 25px;
+	border-top: 3px solid #fff;
+}
+.middleRight .blueHr{
+	margin-bottom: 25px;
+}
+.middleLeft{
+	background: url("images/lightning-flash-storms-4.jpg") no-repeat;
+	background-size: cover;
+	padding: 0;
+}
+.middleRight{
+	background: url("images/lightning-flash-storms-5.jpg") no-repeat;
+	background-size: cover;
+	padding: 0;
+}
+.transparentBlue{
+	background: rgba(135, 206, 250, 0.8);
+	width: 100%;
+	height: 100%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+.transparentBlack{
+	background: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	height: 100%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+.blackBtn{
+	display: inline-block;
+	color: #fff;
+	border: 2px solid #000;
+	padding: 10px;
+}
+.blueBtn{
+	display: inline-block;
+	color: #fff;
+	border: 2px solid #87CEFA;
+	padding: 10px;
+}
+.blackBtn:hover, .blueBtn:hover{
+	color: #000;
+	text-decoration: none;
+}
+.boxContent{
+	min-height: 200px;
+	padding-left: 25%;
+	padding-right: 25%;
+}
+.boxContent p{
+	color: #fff;
+	text-shadow: 1px 1px #000;
+}
+.box{
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.3s;
+	-webkit-transition: .3s;
+  	-moz-transition: .3s;
+  	-o-transition: .3s;
+}
+.middleLeft:hover .box, .middleRight:hover .box{
+	visibility: visible;
+	opacity: 1;
+}
+.boxTop{
+	transform: translateY(100px);
+	transition: .3s;
+	-webkit-transition: .3s;
+  	-moz-transition: .3s;
+  	-o-transition: .3s;
+}
+.middleLeft:hover .boxTop, .middleRight:hover .boxTop{
+	transform: translateY(0);
+}
+/*********
+INDEX CONTACT
+**********/
+.indexContact{
+	background: url("images/lightning-flash-storms-1.jpg") no-repeat;
+	background-size: cover;
+	color: #fff;
+	margin-top: 50px;
+}
+.indexContact a{
+	display: inline-block;
+	color: #fff;
+	background: #2b96c7;
+	padding: 10px 30px;
+	margin-top: 25px;
+	border: 1px solid transparent;
+	transition: 0.3s;
+	-webkit-transition: .3s;
+  	-moz-transition: .3s;
+  	-o-transition: .3s;
+}
+.indexContact a:hover{	
+	background: transparent;
+	color: #2b96c7;
+	border: 1px solid #fff;
+}
+.transparentBgr{
+	background-color: rgba(0, 0, 0, 0.5);
+	padding-top: 20%;
+	padding-bottom: 20%;
+}
+/*********
+FOOTER
+**********/
+footer{
+	color: #fff;
+	background: #2b2b2b;
+	padding-bottom: 50px;
+}
+ footer a{
+	color: #fff;
+ }
+ footer a:hover{
+ 	color: #fff;
+ }
+.footerRight a{
+	display: block;
+}
+.footerMiddle{
+	padding-top: 75px;
+}
+.footerMiddle .fa{
+	font-size: 30px;
+	margin: 0 5px;
+}
+.footerFirstLine{
+	font-size: 16px;
+	margin-bottom: 10px
+}
+/****************************************umzuge.html************************************************/
+.umzuge{
+	background: url("images/lightning-flash-storms-4.jpg") no-repeat;
+	background-size: cover;
+	color: #fff;
+}
+.headerText{
+	padding-top: 20%;
+	padding-bottom: 20%;
+}
+.headerTransparentBgr{
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+}
+.umzugeRight h3, .uberUnsRight h3{
+	color: #2b96c7;
+}
+.umzugeList h4{
+	font-weight: 900;
+}
+.umzugeList ul{
+	list-style-type: none;
+	padding-left: 0;
+}
+/********************************************uber-uns.html**********************************************/
+.contentBackground{
+	padding-top: 20%;
+	padding-bottom: 20%;
+	color: #fff;
+}
+.contentBackground hr{
+	margin-left: 5px;
+}
+.uberUns{
+	background: url("images/lightning-flash-storms-4.jpg") no-repeat;
+	background-size: cover;
+}
+/***************************************************referenzen.html***********************************/
+.referenzen{
+	background: url("images/lightning-flash-storms-4.jpg") no-repeat;
+	background-size: cover;
+}
+.referenzenlogo img{
+	width: 100px;
+}
+.referenzenText p:nth-child(2){
+	color: #5ec4f3;
+	padding-top: 25px;
+}
+.blackHr{
+	border-bottom: 1px solid #000;
+	margin-top: 25px!important;
+}
+/************************************************blog.html******************************************/
+.blog img{
+	width: 100%;
+}
+.blogRight a{
+	display: inline-block;
+	color: #5ec4f3;
+	border: 2px solid #5ec4f3;
+	padding: 5px 20px;
+	margin-top: 25px;
+	transition: .5s;
+	-webkit-transition: .5s;
+  	-moz-transition: .5s;
+  	-o-transition: .5s;
+}
+.blogRight a:hover, .submitContact button:hover{
+	color: #fff;
+	background: #5ec4f3;
+	border-color: #000;
+}
+/***********************************kontakt.html**********************************/
+.contact{
+	background: url("images/lightning-flash-storms-4.jpg") no-repeat;
+	background-size: cover;
+}
+.form-group{
+	padding-left: 0;
+}
+.form-control{
+	height: 50px;
+}
+#contactForm input, #contactForm textarea{
+	border-color: #2eb2ef;;
+	border-radius: 0;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-family: Montserrat-Extra-Light;
+  color: #000!important;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  font-family: Montserrat-Extra-Light;
+  color: #000!important;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  font-family: Montserrat-Extra-Light;
+  color: #000!important;
+}
+:-moz-placeholder { /* Firefox 18- */
+  font-family: Montserrat-Extra-Light;
+  color: #000!important;
+}
+.submitContact{
+	float: right;
+}
+.submitContact label{
+	color: #2eb2ef;
+	padding-right: 10px;
+}
+.submitContact{
+	padding-top: 25px;
+	padding-bottom: 25px;
+	padding-right: 15px;
+}
+.submitContact button{
+	background: #2eb2ef;
+	border-color: transparent;
+	border-radius: 0;
+	padding: 10px 50px;
+	ransition: 0.3s;
+	-webkit-transition: .3s;
+  	-moz-transition: .3s;
+  	-o-transition: .3s;
+}
+/*************************baureinigung.html**********************************/
+.contentLeft ul, .contentRight ul{
+	padding-left: 0;
+	list-style-type: none;
+}
+.contentRight ul a{
+	font-size: 16px;
+	color: #000;
+}
+
+/*********
+MEDIA
+**********/
+@media( max-width: 1200px){
+	.glyphicon-chevron-left:before, .glyphicon-chevron-right:before{
+		display: none;
+	}	
+}
+
+@media( max-width: 991px){
+	h1{
+		font-size: 24px;
+	}
+	.navbar-default .navbar-nav>li>a{
+		padding-left: 5px;
+		padding-right: 5px;
+    	font-size: 12px;
+	}
+	.middleRight{
+		margin-top: 50px;
+	}
+	.referenzenlogo {
+    	text-align: center;
+	}
+	.formRight{
+		padding-top: 0;
+	}
+}
+@media( max-width: 767px){
+	.navbar-nav{
+		float: none!important;
+	}
+	.navbar-toggle .collapsed{
+		background: transparent;
+	}
+	.navbar-default .navbar-toggle{
+		border: none;
+	}
+	.navbar-default .navbar-nav>li>a{
+		padding-left: 20px;
+	}
+	div#bs-example-navbar-collapse-1{
+		background: rgba(0, 0, 0, 0.9);
+	}
+	.icon-bar{
+		background-color: #fff!important;
+	}
+	.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+		background: transparent;
+	}
+	.carousel-caption h1{
+		font-size: 20px;
+	}
+	.footerLeft, .footerLeft, .footerRight{
+		text-align: center;
+	}
+}
+@media( max-width: 575px){
+	.carousel-indicators{
+		display: none;
+	}
+	.glyphicon-chevron-left:before, .glyphicon-chevron-right:before{
+		display: none;
+	}
+}
+@media( max-width: 425px){
+	h2{
+		font-size: 26px;
+	}
+	h3{
+		font-size: 20px;
+	}
+	.logo img{
+		width: 100px;
+	}
+	.nav a{
+		padding-left: 5px!important;
+	}
+	.dropdown-menu a{
+		font-size: 12px;
+		padding-left: 10px!important;
+	}
+	.carousel-caption h1{
+		font-size: 16px;
+		padding-top: 20%;
+	}
+	.topTop, .topMiddle, .topBottom, .customer, .footerLeft, .footerMiddle, .footerRight, .transparentBgr, .umzugeTitle, 
+	.umzugeLeft, .umzugeRight, .umzugeList, .uberUnsTitle, .uberUnsleft, .uberUnsRight, .uberUnsleft p:nth-child(2), .referenzenText,
+	.referenzenlogo, .referenzenTitle, .blogRight, .blog:first-child img, .blogRight p:nth-child(3), #contactForm, .contentTop, .contentLeft, .contentRight, .contentBottom{
+		padding-top: 25px;
+	}
+	.indexContact, .m-top, .blogRight a{
+		margin-top: 25px;
+	}
+	.topMiddle, .transparentBgr, footer{
+		padding-bottom: 25px;
+	}
+	.blueHr{
+		margin-bottom: 25px;
+	}
+	.middleRight{
+		margin-top: 25px;
+	}
+	.boxContent{
+		padding-left: 15%;
+		padding-right: 15%;
+	}
+}
+@media( max-width: 320px){
+	.carousel-caption h1{
+		padding-top: 10%;
+	}
+	.footerFirstLine{
+		font-size: 14px;
+	}
+}
